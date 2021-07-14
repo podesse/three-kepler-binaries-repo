@@ -1,3 +1,3 @@
-# IS THIS WORKING YET?
+# This is the associated repository for the Binary Stars paper
 
-please
+It doesn't have a good name yet. All the scripts referenced in the paper should go here.
