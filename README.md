@@ -12,7 +12,7 @@ In the models directory, you will literally find the PHOEBE models used in this 
 
 ## Data
 
-This directory contains raw data from the Kepler pipline, and the processed data we used in this research
+This directory contains raw data from the Kepler pipline, and the processed data we used in this research.
 
 ## Figures
 
