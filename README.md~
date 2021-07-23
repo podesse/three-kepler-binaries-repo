@@ -17,7 +17,7 @@ b = phoebe.load('10727668.phoebe', import_from_older=True)
 
 ## Data
 
-This directory contains raw data from the Kepler pipline for all three binaries studied, and the processed data we used in this research. Data processing scripts are visible in the ./scripts directory.
+This directory contains raw data from the Kepler pipline for all three binaries studied, and the processed data we used in this research. Data processing scripts are included in the `./scripts` directory.
 
 ## Figures
 

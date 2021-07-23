@@ -8,7 +8,7 @@ These are various scripts used to process data, for plotting, ext.
 
 ## Models
 
-In the models directory, you will find the PHOEBE models used in this research, complete with datasets, solutions, and all settings. These models were generated using PHOEBE 2.3.40 - they can be downloaded and imported with your own PHOEBE installation. If you have a different PHOEBE installaiton, this may require that you pass the `import_from_older` or `import_from_newer` option:
+In the models directory, you will find the PHOEBE models used in this research, complete with datasets, solutions, and all settings. These models were generated using PHOEBE 2.3.40  they can be downloaded and imported with your own PHOEBE installation. If you have a different PHOEBE installaiton, this may require that you pass the `import_from_older` or `import_from_newer` option:
 
 ```python
 import phoebe
