@@ -9,6 +9,7 @@ import numpy as np
 import mmap # Because one of my files is being naughty
 
 import matplotlib.pylab as plt
+from matplotlib import rc
 
 c = 2.998e8 # The speed of light, roughly
 
@@ -105,21 +106,28 @@ solSpec = moveAxes(solSpec) # This way, wavelength is its own list, separate fro
 kepRes = loadDat("kepler_response_hires1_parsable.dat")
 kepRes = moveAxes(kepRes)
 
-'''
-fig, ax1 = plt.subplots()
-plt.title("Solar Irradiance and Spectral Response Function vs. Wavelength")
-ln1 = ax1.plot(solSpec[0], solSpec[1], label="Solar Spectral Irradiance", color='r')
-ax1.set_xlabel("Wavelength [nm]")
-ax1.set_ylabel("Spectral Irradiance [W/m^2/nm]")
+
+# Plot the two curves
+rc('font',**{'family':'serif','serif':['Courier']})
+rc('text', usetex=True)
+o_color = '#e87932'
+p_color = '#3d398c'
+pref_figsize=[3.5, 3.5]
+
+fig, ax1 = plt.subplots(figsize=pref_figsize)
+#plt.title("Solar Irradiance and Spectral Response Function vs. Wavelength")
+ln1 = ax1.plot(solSpec[0], solSpec[1], label="SSI", color=o_color)
+ax1.set_xlabel("Wavelength (nm)")
+ax1.set_ylabel('Spectral Irradiance (W/m'r'$^2$''/nm)')
 ax2 = ax1.twinx()
-ax2.set_ylabel("Response Function (Transmission) [Fraction]")
-ln2 = ax2.plot(kepRes[0], kepRes[1], label="Kepler Response Function", color='b')
+ax2.set_ylabel('Response Function (Transmission Fraction)')
+ln2 = ax2.plot(kepRes[0], kepRes[1], label="Kepler", color=p_color)
 lns = ln1+ln2
 lbls = [l.get_label() for l in lns]
 ax1.legend(lns, lbls)
 fig.tight_layout()
 plt.savefig("wavelength_functions.png", dpi=300)
-'''
+
 
 # Cool. The integral is with respect to frequency, rather than wavelength. So, we will need to
 # convert our wavelength arrays to frequency arrays using the wave equation, c = \nu\lambda.
@@ -145,21 +153,21 @@ print(denominator_integral)
 ABmag = -2.5*np.log10(numerator_integral/denominator_integral)
 print("AB magnitude of the Sun through the Kepler filter: {0}".format(ABmag))
 
-'''
-fig, ax1 = plt.subplots()
-plt.title("Sol Irad. & Spect. Resp. Function vs. Frequency")
-ln1 = ax1.plot(solSpec[0], solSpec[1], label="Solar Spectral Irradiance", color='r')
-ax1.set_xlabel("Frequency [Hz]")
-ax1.set_ylabel("Spectral Irradiance [W/m^2/Hz]")
+
+fig, ax1 = plt.subplots(figsize=pref_figsize)
+#plt.title("Sol Irad. & Spect. Resp. Function vs. Frequency")
+ln1 = ax1.plot(solSpec[0], solSpec[1], label="SSI", color=o_color)
+ax1.set_xlabel("Frequency (Hz)")
+ax1.set_ylabel('Spectral Irradiance (W/m'r'$^2$''/Hz)')
 ax2 = ax1.twinx()
-ax2.set_ylabel("Response Function (Transmission) [Fraction]")
-ln2 = ax2.plot(kepRes[0], kepRes[1], label="Kepler Response Function", color='b')
+ax2.set_ylabel("Response Function (Transmission Fraction)")
+ln2 = ax2.plot(kepRes[0], kepRes[1], label="Kepler", color=p_color)
 lns = ln1+ln2
 lbls = [l.get_label() for l in lns]
 ax1.legend(lns, lbls)
 fig.tight_layout()
 plt.savefig("frequency_functions.png", dpi=300)
-'''
+
 
 # Seeing how easily we were able to compute that integral... we can probably just search for
 # an appropriate flux-scaling factor numerically to get ABmag = 12 ! That would certainly be
