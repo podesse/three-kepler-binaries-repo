@@ -1,0 +1,9 @@
+# Figures for MCMC Analysis of the Binned Light Curve for KIC 8314879
+
+## The log-probability plot
+
+It should be noted that there is a sudden distinct increase in the log-probability function near iteration 5000. After this run started, we decided to increase the resolution of binned data points from 200 to 500. However, we did not wish to lose all the progress this run had made so far, so we simply continued the run with the updated dataset. This had minimal impact on the shape of the light curve, but since more points were being compared, the log-probability increased. 
+
+## Trace plots
+
+The sudden increase in resolution halfway through the run also decreased the acceptance of new positions in the parameter space. This can be seen in the trace plots: after 5000 iterations, the walkers begin to take smaller steps. For several parameters, such as the sum of fractional radii $\frac{R_1+R_2}{a}$, the walkers become more clustered
