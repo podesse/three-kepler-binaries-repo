@@ -2,6 +2,8 @@
 
 Here you will find several figures included in this paper, or associated to this research.
 
+Disclaimer for GitHub Dark Mode users: Many of these figures were generated with transparent backgrounds. This means that the axis titles and values will blend into the background when using dark mode. I'm still working on a fix for this issue.
+
 -----
 
 Apparently you can host GIFs on Github.
