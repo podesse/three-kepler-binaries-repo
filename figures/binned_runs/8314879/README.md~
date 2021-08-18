@@ -19,7 +19,7 @@ The log-probability plot, after the discontinuity induced by changing the data s
 
 ## Trace plots
 
-The sudden increase in resolution halfway through the run also decreased the acceptance of new positions in the parameter space. This can be seen in the trace plots: after 5000 iterations, the walkers begin to take smaller steps. For several parameters, such as the sum of fractional radii $\frac{R_1+R_2}{a}$, the walkers become more clustered.
+The sudden increase in resolution halfway through the run also decreased the acceptance of new positions in the parameter space. This can be seen in the trace plots: after 5000 iterations, the walkers begin to take smaller steps. For several parameters, such as the sum of fractional radii, the walkers become more clustered.
 
 <figcaption>
 The full trace plot, without burn-in or thinning applied, highlights the change in sampling behaviour after 5000 iterations.

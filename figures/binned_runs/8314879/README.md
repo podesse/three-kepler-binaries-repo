@@ -25,4 +25,16 @@ The sudden increase in resolution halfway through the run also decreased the acc
 The full trace plot, without burn-in or thinning applied, highlights the change in sampling behaviour after 5000 iterations.
 </figcaption>
 
-<img src="https://github.com/podesse/binary-paper-repo/blob/main/figures/binned_runs/8314879/trace_full.png" width=500/>
+<img src="https://github.com/podesse/binary-paper-repo/blob/main/figures/binned_runs/8314879/trace_full.png" width=1000/>
+
+## Light Curve
+
+<img src="https://github.com/podesse/binary-paper-repo/blob/main/figures/binned_runs/8314879/lc_8314879.png" width=500/>
+
+### Light Curve Residuals
+
+<img src="https://github.com/podesse/binary-paper-repo/blob/main/figures/binned_runs/8314879/res.png" width=500/>
+
+## Corner Plot
+
+<img src="https://github.com/podesse/binary-paper-repo/blob/main/figures/binned_runs/8314879/corner.png" width=1000/>
