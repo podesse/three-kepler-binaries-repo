@@ -2,7 +2,7 @@
 
 ## Light Curve
 
-<img src="https://github.com/podesse/binary-paper-repo/blob/main/figures/binned_runs/10727668/lc_5957123.png" width=500/>
+<img src="https://github.com/podesse/binary-paper-repo/blob/main/figures/binned_runs/5957123/lc_5957123.png" width=500/>
 
 ### Light Curve Residuals
 
