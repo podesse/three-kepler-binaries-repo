@@ -4,7 +4,7 @@ Here you will find the Kepler light curve data used in this research, both pre- 
 
 ## kplr*.dat
 
-These are the original data files, directly interpreted from the Kepler `.fits` files using the script `kic_reader.py` script found in the ../scripts directory.
+These are the original data files, directly interpreted from the Kepler `.fits` files using the script `kic_reader.py` script found in the `../scripts` directory.
 
 ## kplr*_detrended.dat
 

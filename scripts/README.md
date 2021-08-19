@@ -1,6 +1,6 @@
 # Scripts
 
-These are various scripts. Have fun.
+These are various scripts used throughout this project.
 
 ------
 
