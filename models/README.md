@@ -19,7 +19,7 @@ import phoebe
 
 b = phoebe.load('10727668.phoebe')
 
-b.import_solution('emcee_sol_10727668.out.progress, solution='emcee_solution_progress')
+b.import_solution('emcee_sol_10727668.out.progress', solution='emcee_solution_progress')
 ```
 
 From here, all of the diagnostic plots found within the ../figures directory may be generated.
