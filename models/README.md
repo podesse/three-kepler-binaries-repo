@@ -14,7 +14,7 @@ Note that these models do not contain the original parameter values obtained by 
 
 The output from each MCMC run is saved in the emcee_sol_*.out.progress files. These are saved separately from the models and compressed, since they otherwise require a few hundred MB of memory each. To view a solution first requires loading the appropriate PHOEBE bundle, and then importing the solution.
 
-```
+```python
 import phoebe
 
 b = phoebe.load('10727668.phoebe')
