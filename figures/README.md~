@@ -14,20 +14,20 @@ These directories include (but are not limited to): log-probability plots, trace
 
 As a bonus, fully animated GIFs of all systems are displayed below.
 
-<img src="https://github.com/podesse/binary-paper-repo/blob/main/figures/ex_5957123.gif" width=500/>
-
 <figcaption>
 For instance, here is an animation of the model for KIC 5957123.
 </figcaption>
 
-<img src="https://github.com/podesse/binary-paper-repo/blob/main/figures/ex_8314879.gif" width=500/>
+<img src="https://github.com/podesse/binary-paper-repo/blob/main/figures/ex_5957123.gif" width=500/>
 
 <figcaption>
 Here is an animation of the model for KIC 8314879.
 </figcaption>
 
-<img src="https://github.com/podesse/binary-paper-repo/blob/main/figures/ex_10727668.gif" width=500/>
+<img src="https://github.com/podesse/binary-paper-repo/blob/main/figures/ex_8314879.gif" width=500/>
 
 <figcaption>
 And here is an animation of the model for KIC 10727668.
 </figcaption>
+
+<img src="https://github.com/podesse/binary-paper-repo/blob/main/figures/ex_10727668.gif" width=500/>

@@ -10,7 +10,7 @@ Figures from the MCMC analysis of the binned light curves are presented in the `
 
 These directories include (but are not limited to): log-probability plots, trace plots, corner plots of various size, light curves and residuals.
 
------
+## Animated Mesh Plots
 
 As a bonus, fully animated GIFs of all systems are displayed below.
 
